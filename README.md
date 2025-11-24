@@ -1,14 +1,23 @@
-# Microsoft Azure-projects
+# Microsoft Azure projects
 
 ## Komplex monitoring környezet Windows és Linux virtuális gépekhez
 
-1. Virtuális gépek létrehozása
+### Virtuális gépek létrehozása
 
-1.1 Windows virtuális gép létrehozása
+*Windows virtuális gép létrehozása*
 
 Az erőforráscsoport létrehozását követően a "Create" gombra kattintva a Marketplace keresősávjába beírjuk, hogy Virtual Machine és elindítjuk a folyamatot.
 
-![marketplace - vm1](https://github.com/user-attachments/assets/43e83efb-a4ab-46c5-be0c-b6b16fa03757)
+<img src="./images/marketplace - vm.jpg" width="350">
+
+A több fülből álló folyamatlépcső első fülén kiválasztjuk a Windows image fájlt, amelyet a virtuális gépünkre szeretnénk installálni az Azure segítségével és a használathoz szükséges felhasználónév és jelszó párost is megadjuk. 
+
+
+
+
+
+
+
 
 
 
