@@ -34,9 +34,15 @@ A szabályok határértékeinek túllépésénél e-mail értesítést kerül be
 
 A Linux rendszerű virtuális gép létrehozásának folyamata hasonló lépésekből épül fel, mint a korábban létrehozott gép. Az első érdemi változás a "Basics" fülön az image fájl kiválasztásánál lesz tapasztalható, ahol már egy "Ubuntu 24.04 LTS x64" képfájlt kell használni. Mindemellett a Windows részére szánt gépméretet érdemes lehet kisebbre cserélni (Standard_B1s), amelyen a Linux rendszer könnyedén el fog futni a kisebb erőforrásigénye miatt. 
 
+<img src="./images/Linux - Image and size.jpg" width="350">
+
 Újdonság lesz az SSH kulcs használata, amivel használni lehet majd a virtuális gépet és egyúttal biztonságos hozzáférhetőséget nyújt a felhasználó számára. A kulcs létrehozásánál generálhatunk újat vagy akár meglévővel is dolgozhatunk. 
 
+<img src="./images/Linux - SSH key.jpg" width="350">
+
 A Standard SSD használatának kiválasztásán túl a lényegi módosításokat ez esetben is a "Monitoring" fülön kell elvégezni. A riasztási szabályok definiálásánál a CPU használati beállítást változatlanul hagyjuk, viszont a csökkentett erőforrásigényű gépünk memória használatára vonatkozóan állítunk be új szabályt, ami akkor küld riasztást a megadott e-mail fiókunkba, hogyha a rendelkezésre álló memória 250Mb alá süllyed. Egyéb változtatásra nincs szükség, a "Create" gombbal létrehozzuk.
+
+<img src="./images/Linux - Monitoring.jpg" width="350">
 
 
 
