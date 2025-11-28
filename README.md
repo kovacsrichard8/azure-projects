@@ -51,7 +51,15 @@ Az elkészített virtuális gépek értékeinek felügyeletéhez, optimális mű
 A Microsoft Azure minderre széleskörű lehetőséget nyújt és a keresősávban a "Monitor" szolgáltatást megkeresve számos lehetőség adódik a fentiek vizsgálatára. 
 Az irányítópult létrehozásához a bal oldali menüsávban rá kell kattintani a "Metrics" menüpontra. 
 
-Testreszabjuk, hogy a két korábban létrehozott virtuális gépeinket szeretnénk majd monitorozni és adatokat gyűjteni a viselkedésükről. A többi lehetőséget figyelmen kívül hagyva ki kell jelölni a két virtuális gépet. A keresősáv használata opcionális, de hasznos lehetőség, hogy a virtuális gépeket kikeressük, ha már nagyobb mennyiségű más erőforrás is található abban az erőforráscsoportban. 
+<img src="./images/Monitor - Overview.jpg" width="350">
+
+Testreszabjuk, hogy a két korábban létrehozott virtuális gépeinket szeretnénk majd monitorozni és adatokat gyűjteni a viselkedésükről. A többi lehetőséget figyelmen kívül hagyva ki kell jelölni a két virtuális gépet. A keresősáv használata opcionális, de hasznos lehetőség, hogy a virtuális gépeket megkeressük, ha már számos más erőforrás is található abban az erőforráscsoportban. 
+
+<img src="./images/Metrics - Apply VMs.jpg" width="350">
+
+
+
+
 
 
 
