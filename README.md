@@ -80,13 +80,33 @@ A létrehozott irányítópultokat tovább színesíthetjük csempék hozzáadá
 
 A létrehozott virtuális gépeinknél az adatgyűjtés megkezdése előtt engedélyezni kell a Monitoringot. Az engedélyezési folyamatot a Monitoring eszközt megkeresve az Insights menüpontnál tudjuk elindítani. Ezen az oldalon keresztül felügyelni és követni tudjuk majd a virtuális gépünk egészségügyi és a teljesítményhez kötött állapotát. Az "Enable" gombra kattintva felugrik egy kisebb ablak, amely a Monitoring konfigurációjának beállításán vezet végig. 
 Be kell állítani egy adatgyűjtési szabályt, amit át is lehet nevezni, ezzel párhuzamosan az adatgyűjtési folyamatnak a rendszer létrehoz alapértelmezetten egy "Log Analytics Workspace-t", amely az Azure Monitor tárolójaként is értelmezhető és ide kerülnek be az erőforrásokból kinyert metrikák, információk. 
-
+<table>
+  <tr>
+    <td><img src="./images/Monitoring - Enable Insights.jpg" width="400"></td>
+    <td><img src="./images/Monitoring Config.jpg" width="300"></td>
+  </tr>
+</table>
 
 A Monitoring felületen a virtuális gépek gombra kattintva láthatjuk, hogy a gépeink jelenleg monitorozva vannak vagy sem. Ha utóbbit tapasztaljuk, akkor a "Not Monitored" fülre kattintva az felügyelni kívánt virtuális gépünk monitorozását az "Enable" gombbal tudjuk aktívvá tenni.
 
+<img src="./images/Monitoring Enabled.jpg" width="300">
 
 Az alapokat elvégezve testre kell szabni, hogy az adatgyűjtés milyen forrásokból származzon a virtuális gépekre levetítve, ezért egy Linux, Windows vagy akár mindkét rendszerre vonatkozó virtuális gépekre szabott adagyűjtési szabályt (Data Collection Rule) kell létrehozni, aminek segítségével teljesítmény adatokat vagy logokat gyűjthetünk. Mindezek tárolására a Workspace nyújt segítséget, amit majd ki is kell választani az adatforrás típusának megerősítését követően. 
 Az adatok vizualizációja 10-15 perc múltán megjelenik a megfigyelt virtuális gépünk Monitoring fülére kattintva az Insights fülön, ahol többek között olyan információkkal találkozhatunk, mint a CPU terhelése, hálózati adatforgalom vagy a diszk használat.
+<table>
+  <tr>
+    <td><img src="./images/DCR - Basics.jpg" width="300"></td>
+    <td><img src="./images/DCR - Resources.jpg" width="400"></td>
+    <td><img src="./images/DCR - Data source.jpg" width="300"></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="./images/DCR - Destination.jpg" width="300"></td>
+    <td><img src="./images/Data Collection Rules.jpg" width="300"></td>
+    </tr>
+</table>
+
 
 
 
