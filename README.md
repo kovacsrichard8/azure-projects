@@ -136,6 +136,34 @@ Végül egy tesztet, amely percenkénti frissítéssel számszerűsíti a virtu�
 
 <img src="./images/KQL - VM working.jpg" width="300">
 
+### Riasztások tesztelése és módosítása
+
+Linux esetében az SSH kapcsolódást követően Bash használatával:
+
+Futtatás:
+```bash
+sudo apt update
+sudo apt install -y stress-ng
+stress-ng --cpu 2 --timeout 300s
+```
+Leállítás:
+```bash
+sudo pkill stress-ng
+```
+
+Windows esetében PowerShell használatával:
+
+Futtatás:
+```powershell
+for ($i=0; $i -lt 4; $i++) { Start-Job { while ($true) { } } }
+```
+Leállítás:
+```powershell
+Get-Job | Stop-Job
+```
+
+Bármely rendszernek a kódblokk lefuttatását követő 5-10 percen belül a Monitor szolgáltatást megnyitva és azon belül az Alerts fülre kattintva láthatóvá válnak a riasztások. Mindemellett, ha a beállításainkat is úgy végeztük el, akkor e-mail értesítést is kaphatunk. Ezeket a beállításokat módosíthatjuk, szigoríthatunk a jelzési küszöbértékeken és emellé a súlyossági fok mértékét is megszabhatjuk különféle jelzőkkel (Pl: Informational, Error, Critical). 
+
 
 
 
