@@ -175,12 +175,27 @@ Get-Job | Stop-Job
 ```
 
 Bármely rendszernek a kódblokk lefuttatását követő 5-10 percen belül a Monitor szolgáltatást megnyitva és azon belül az Alerts fülre kattintva láthatóvá válnak a riasztások. Ezeket a beállításokat módosíthatjuk, szigoríthatunk a jelzési küszöbértékeken és emellé a súlyossági fok mértékét is megszabhatjuk különféle jelzőkkel (Pl: Informational, Error, Critical). 
+<table>
+  <tr>
+    <td><img src="./images/CPU Alert - Windows.jpg" width="300"></td>
+    <td><img src="./images/CPU alert - Linux.jpg" width="300"></td>
+    <td><img src="./images/Linux - Percentage CPU.jpg" width="300"></td>
+    <td><img src="./images/Windows - Percentage CPU.jpg" width="300"></td>
+  </tr>
+</table>
 
-
-Ha a küszöbértékünket utólag szeretnénk módosítani arra is van lehetőség. A kapott jelzéseket visszakereshetjük a Monitor szolgáltatáson belül vagy akár külön megkereshetjük azt a virtuális gépet, amelyiknek az értékein módosítást szeretnénk végezni. Minden esetben az Alerts menüpontot keressük és azon belül az "Alert rules" gombot.
-
+Ha a küszöbértékünket utólag szeretnénk módosítani arra is van lehetőség. A kapott jelzéseket visszakereshetjük a Monitor szolgáltatáson belül vagy akár külön megkereshetjük azt a virtuális gépet, amelyiknek az értékein módosítást szeretnénk végezni. Minden esetben az Alerts menüpontot keressük és azon belül az "Alert rules" gombot. Ott megtaláljuk az általunk létrehozott összes értesítést és kiválasztjuk azt, amelyiket módosítani szeretnénk.
+<table>
+  <tr>
+    <td><img src="./images/Monitor - Alert rules.jpg" width="300"></td>
+    <td><img src="./images/Alert - Edit.jpg" width="300"></td>
+    <td><img src="./images/Alert - Edit rules.jpg" width="300"></td>
+  </tr>
+</table>
 
 Mindemellett, ha a beállításainkat is úgy végeztük el, akkor e-mail értesítést is kaphatunk a jelzésekről, amelyeket rövid időn belül elküld számunkra a Microsoft Azure. 
+
+<img src="./images/Linux - CPU Alert-Email.jpg" width="300">
 
 
 
