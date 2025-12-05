@@ -26,7 +26,7 @@ A további beállítások elvégzését a Monitoring fülön kell elvégeznünk,
   </tr>
 </table>
 
-A szabályok határértékeinek túllépésénél e-mail értesítést kerül beállításra még, amely az általunk beállított "severity" vagyis súlyossági fok alapján küld értesítőt az e-mail fiókunkba. Az utolsó lépést a Review+Create fülön végezzük el
+A szabályok határértékeinek túllépésénél e-mail értesítést kerül beállításra még, amely az általunk beállított "severity" vagyis súlyossági fok alapján küld értesítőt az e-mail fiókunkba. Az utolsó lépést a "Review+Create" fülön végezzük el.
 
 <img src="./images/Windows - Email notify.jpg" width="400">
 
@@ -53,11 +53,11 @@ Az irányítópult létrehozásához a bal oldali menüsávban rá kell kattinta
 
 <img src="./images/Monitor - Overview.jpg" width="350">
 
-Testreszabjuk, hogy a két korábban létrehozott virtuális gépeinket szeretnénk majd monitorozni és adatokat gyűjteni a viselkedésükről. A többi lehetőséget figyelmen kívül hagyva ki kell jelölni a két virtuális gépet. A keresősáv használata opcionális, de hasznos lehetőség, hogy a virtuális gépeket megkeressük, ha már számos más erőforrás is található abban az erőforráscsoportban. 
+Testreszabjuk, hogy a két korábban létrehozott virtuális gépeinket szeretnénk majd monitorozni és adatokat gyűjteni a viselkedésükről. A többi lehetőséget figyelmen kívül hagyva ki kell jelölni a két virtuális gépet. A keresősáv használata opcionális, de hasznos lehetőség, hogy a virtuális gépeket megkeressük, ha már számos más erőforrás is található az adott erőforráscsoportban. 
 
 <img src="./images/Metrics - Apply VMs.jpg" width="350">
 
-A létrehozást követően a diagramhoz metrikákat adhatunk hozzá, amikkel vizsgálódhatunk és elemezhetjük a megfigyelt erőforrásainkat. Az adatgyűjtés rendszeres iőközönként történik és szűrhetjük az eredményeket az időközök megválasztásával, ami órában, napban, de akár hónapban is elérhetőek számunkra. Jelen esetben a memória és a processzor terheltségét mutatják a diagramok. Fontos megjegyezni, hogy egy diagramon kombinált eredményeket is létrehozhatunk, nem csak és kizárólag egy eredmény kimutatására alkalmasak. 
+A létrehozást követően a diagramhoz metrikákat adhatunk hozzá, amikkel vizsgálódhatunk és elemezhetjük a megfigyelt erőforrásainkat. Az adatgyűjtés rendszeres időközönként történik és szűrhetjük az eredményeket az időintervallumok megválasztásával, ami órában, napban, de akár hónapban is elérhetőek számunkra. Jelen esetben a memória és a processzor terheltségét mutatják a diagramok. Fontos megjegyezni, hogy egy diagramon kombinált eredményeket is létrehozhatunk, nem csak és kizárólag egy eredmény kimutatására alkalmasak. 
 <table>
   <tr>
     <td><img src="./images/Metrics - CPU chart.jpg" width="300"></td>
@@ -65,7 +65,7 @@ A létrehozást követően a diagramhoz metrikákat adhatunk hozzá, amikkel viz
   </tr>
 </table>
 
-Az eredményeinket külön irányítópultban kezelhetjük, ahol újbóli lekérdezések nélkül az általunk létrehozott erőforráscsoportban megtekinthetőek a legfrisebb eredmények az erőforrások állapotáról. Az irányítópultot használhatjuk saját célra, de akár megosztott állapotban a szervezet különböző felhasználói reszére is közzé tehetjük. Az irányítópultok létrehozása néhány kattintással elérhetővé válik, ahol a fentiek szerint eldönthetjük a felhasználás célját.
+Az eredményeinket külön irányítópultban kezelhetjük, ahol újbóli lekérdezések nélkül az általunk létrehozott erőforráscsoportban megtekinthetőek a legfrisebb eredmények az erőforrások állapotáról. Az irányítópultot használhatjuk saját célra, de akár megosztott állapotban a szervezet különböző felhasználói reszére is elérhetővé tehetjük. Az irányítópultok létrehozása néhány kattintással elérhetővé válik, ahol a fentiek szerint eldönthetjük a felhasználás célját.
 
 <img src="./images/Metrics - Pin dashboard.jpg" width="300">  
 <img src="./images/Metrics - Create dashboard.jpg" width="150">
@@ -78,7 +78,7 @@ A létrehozott irányítópultokat tovább színesíthetjük csempék hozzáadá
 
 ### Naplók engedélyezése
 
-A létrehozott virtuális gépeinknél az adatgyűjtés megkezdése előtt engedélyezni kell a Monitoringot. Az engedélyezési folyamatot a Monitoring eszközt megkeresve az Insights menüpontnál tudjuk elindítani. Ezen az oldalon keresztül felügyelni és követni tudjuk majd a virtuális gépünk egészségügyi és a teljesítményhez kötött állapotát. Az "Enable" gombra kattintva felugrik egy kisebb ablak, amely a Monitoring konfigurációjának beállításán vezet végig. 
+A létrehozott virtuális gépeinknél az adatgyűjtés megkezdése előtt engedélyezni kell a Monitoringot. Az engedélyezési folyamatot a Monitor szolgáltatást megkeresve az "Insights" menüpontnál tudjuk elindítani. Ezen az oldalon keresztül felügyelni és követni tudjuk majd a virtuális gépünk egészségügyi és a teljesítményhez kötött állapotát. Az "Enable" gombra kattintva felugrik egy kisebb ablak, amely a Monitoring konfigurációjának beállításán vezet végig. 
 Be kell állítani egy adatgyűjtési szabályt, amit át is lehet nevezni, ezzel párhuzamosan az adatgyűjtési folyamatnak a rendszer létrehoz alapértelmezetten egy "Log Analytics Workspace-t", amely az Azure Monitor tárolójaként is értelmezhető és ide kerülnek be az erőforrásokból kinyert metrikák, információk. 
 <table>
   <tr>
@@ -87,12 +87,12 @@ Be kell állítani egy adatgyűjtési szabályt, amit át is lehet nevezni, ezze
   </tr>
 </table>
 
-A Monitoring felületen a virtuális gépek gombra kattintva láthatjuk, hogy a gépeink jelenleg monitorozva vannak vagy sem. Ha utóbbit tapasztaljuk, akkor a "Not Monitored" fülre kattintva az felügyelni kívánt virtuális gépünk monitorozását az "Enable" gombbal tudjuk aktívvá tenni.
+A Monitoring felületen a "virtual machines" gombra kattintva láthatjuk, hogy a gépeink jelenleg monitorozva vannak vagy sem. Ha utóbbit tapasztaljuk, akkor a "Not Monitored" fülre kattintva az felügyelni kívánt virtuális gépünk monitorozását az "Enable" gombbal tudjuk aktívvá tenni.
 
 <img src="./images/Monitoring Enabled.jpg" width="300">
 
 Az alapokat elvégezve testre kell szabni, hogy az adatgyűjtés milyen forrásokból származzon a virtuális gépekre levetítve, ezért egy Linux, Windows vagy akár mindkét rendszerre vonatkozó virtuális gépekre szabott adagyűjtési szabályt (Data Collection Rule) kell létrehozni, aminek segítségével teljesítmény adatokat vagy logokat gyűjthetünk. Mindezek tárolására a Workspace nyújt segítséget, amit majd ki is kell választani az adatforrás típusának megerősítését követően. 
-Az adatok vizualizációja 10-15 perc múltán megjelenik a megfigyelt virtuális gépünk Monitoring fülére kattintva az Insights fülön, ahol többek között olyan információkkal találkozhatunk, mint a CPU terhelése, hálózati adatforgalom vagy a diszk használat.
+Az adatok vizualizációja 10-15 perc múltán megjelenik a megfigyelt virtuális gépünk Monitoring fülére kattintva az "Insights" fülön, ahol többek között olyan információkkal találkozhatunk, mint a CPU terhelése, hálózati adatforgalom vagy a diszk használat.
 <table>
   <tr>
     <td><img src="./images/DCR - Basics.jpg" width="300"></td>
@@ -110,7 +110,7 @@ Az adatok vizualizációja 10-15 perc múltán megjelenik a megfigyelt virtuáli
 ### Naplók lekérdezése (KQL)
 
 A virtuális gépek működésének adatait most már tárolja a Log Analytics Workspace, amik létfontosságú adatokat tárolnak a gépek működéséről. Éppen ezért nyomonkövetésük fontos a cég vagy akár egy felhasználó számára is, mert nemcsak a működésről, hanem a belefektetett költségek kényes egyensúlyáról is szó van.
-A KQL lekérdezéseket a Monitoring felületen a Logs gombra kattintva érhetjük el, ahol egy ablakban a hatókört megadva (Saját Workspace) és a felületen a KQL (Kusto Query Language) módot alkalmazva máris használatra kész.
+A KQL lekérdezéseket a Monitor szolgáltatáson belül a "Logs" gombra kattintva érhetjük el, ahol egy ablakban a hatókört megadva (Saját Workspace kiválasztása) és a felületen a KQL (Kusto Query Language) módot alkalmazva máris használatra kész.
 
 <img src="./images/KQL - KQL querie.jpg" width="300">
 
@@ -132,7 +132,7 @@ Logokat kérdezhetünk le a megfelelő elenvezést használva adott időszakra v
 
 <img src="./images/KQL - Disk space.jpg" width="300">
 
-Végül egy tesztet, amely percenkénti frissítéssel számszerűsíti a virtuális gépek működésbeli vagy éppen használaton kívüli állapotát. A képen látható, hogy a virtuális gépek az elmúlt egy napban sokat futottak. 
+Végül egy tesztet, amely percenkénti frissítéssel számszerűsíti a virtuális gépek működésbeli vagy éppen használaton kívüli állapotát. A képen látható, hogy a virtuális gépek az elmúlt egy napban sokat futottak. Az adott számláló percenként ad hozzá egyet a korábbi értékhez. 
 
 <img src="./images/KQL - VM working.jpg" width="300">
 
@@ -162,7 +162,13 @@ Leállítás:
 Get-Job | Stop-Job
 ```
 
-Bármely rendszernek a kódblokk lefuttatását követő 5-10 percen belül a Monitor szolgáltatást megnyitva és azon belül az Alerts fülre kattintva láthatóvá válnak a riasztások. Mindemellett, ha a beállításainkat is úgy végeztük el, akkor e-mail értesítést is kaphatunk. Ezeket a beállításokat módosíthatjuk, szigoríthatunk a jelzési küszöbértékeken és emellé a súlyossági fok mértékét is megszabhatjuk különféle jelzőkkel (Pl: Informational, Error, Critical). 
+Bármely rendszernek a kódblokk lefuttatását követő 5-10 percen belül a Monitor szolgáltatást megnyitva és azon belül az Alerts fülre kattintva láthatóvá válnak a riasztások. Ezeket a beállításokat módosíthatjuk, szigoríthatunk a jelzési küszöbértékeken és emellé a súlyossági fok mértékét is megszabhatjuk különféle jelzőkkel (Pl: Informational, Error, Critical). 
+
+
+Ha a küszöbértékünket utólag szeretnénk módosítani arra is van lehetőség. A kapott jelzéseket visszakereshetjük a Monitor szolgáltatáson belül vagy akár külön megkereshetjük azt a virtuális gépet, amelyiknek az értékein módosítást szeretnénk végezni. Minden esetben az Alerts menüpontot keressük és azon belül az "Alert rules" gombot.
+
+
+Mindemellett, ha a beállításainkat is úgy végeztük el, akkor e-mail értesítést is kaphatunk a jelzésekről, amelyeket rövid időn belül elküld számunkra a Microsoft Azure. 
 
 
 
